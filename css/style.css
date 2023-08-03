@@ -1,0 +1,98 @@
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+section{
+    background-color: #f7ecde;
+    min-height: 100vh;
+    z-index: 1;
+}
+input{
+    box-shadow: #d1512d !important;
+    text-shadow: #d1512d;
+}
+h1{
+    padding: 50px 0px;
+    Font-size: 50px;
+    Font-weight: 500;
+    Line-height: 60px;
+    color: rgb(53, 46, 40);
+    font-family: 'Pacifico', cursive;
+    position: relative;
+
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 25%;
+    left: 0;
+    top: 50%;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+.dots{
+    border: 2px;
+    border-color: rgb(53, 46, 40);
+    border-style: dotted;
+    border-radius: 50%;
+}
+
+h2{
+    position: relative;
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    Font-weight: 500;
+    Line-height: 30px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    
+
+}
+
+h2::before {
+    content: "\f02e";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    top: 0px;
+    left: -30px;
+    z-index: 0;
+}
+
+h2::after {
+    content: "\f02e";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    top: 50%;
+    left:102%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.button{
+    margin: 10px;
+    color: white;
+    background-color: #d1512d;
+    padding: 7px 55px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.btnn{
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.visit{
+    background-color: #9eb23b;    
+}
+
+.delete{
+    background-color: #eb2e4b;
+    color: white;
+}

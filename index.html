@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Mark</title>
+    <link rel="shortcut icon" href="images/2698487.png" type="image/x-icon" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+3:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Righteous&family=Source+Sans+3:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <div class=""><h1 class="text-center">Bookmarker</h1></div>
+
+        <div class="dots"></div>
+
+        <div class="d-flex my-4">
+          <h2 class="bg-info m-auto">Bookmark your favorite sites</h2>
+        </div>
+
+        <div class="">
+          <i class="fa-solid fa-book-bookmark px-2"></i>
+          <label for="Site Name">Site Name</label>
+          <input
+            type="text"
+            name="Site Name"
+            id="siteName"
+            placeholder="Bookmark Name"
+            class="form-control m-2"
+          />
+
+          <i class="fa-solid fa-link px-2"></i>
+          <label for="Site URL">Site URL</label>
+          <input
+            type="text"
+            name="Site URL"
+            id="siteUrl"
+            placeholder="Website URL"
+            class="form-control m-2"
+          />
+        </div>
+        <div class="text-center">
+          <button onclick="create()" class="button">Submit</button>
+        </div>
+
+        <div class="dots my-5"></div>
+      </div>
+      <input
+        id="searchInput"
+        oninput="search()"
+        type="text"
+        placeholder="Search..."
+        class="form-control w-75 m-auto py-3"
+      />
+      <div class="container">
+        <div class="table-responsive mt-5">
+          <table class="table">
+            <thead class="table-white text-center">
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tableContent" class="text-center"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
